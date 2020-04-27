@@ -23,7 +23,7 @@ async def on_ready():
 @bot.command()
 async def kumiwake(ctx, specified_num=2):
     make_team = MakeTeam()
-    remainder_flag = 'false'
+    remainder_flag = 'true'
     msg = make_team.make_party_num(ctx,specified_num)
     await ctx.channel.send(msg)
 
