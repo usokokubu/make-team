@@ -19,13 +19,14 @@ async def on_ready():
     print('------------------------')
 
 """コマンド実行"""
-# メンバー数が均等にはならないチーム分けその２
+# メンバー数が均等になるチーム分けその2
 @bot.command()
-async def kumiwake(ctx, specified_num=2):
+async def (ctx, specified_num=2):
     make_team = MakeTeam()
-    msg = make_team.make_party_num(ctx,specified_num)
+    remainder_flag = 'true'
+    msg = make_team.make_party_num(ctx,specified_num,remainder_flag)
     await ctx.channel.send(msg)
-
+    
 # メンバー数が均等になるチーム分け
 @bot.command()
 async def team(ctx, specified_num=2):
