@@ -41,7 +41,7 @@ class MakeTeam:
             if remainder_num != 0: 
                 for r in range(remainder_num):
                     remainder.append(self.channel_mem.pop())
-                team.append("=====余り=====")
+                team.append("=====アズカバン（余り）=====")
                 team.extend(remainder)
 
         # チーム分け 
