@@ -21,7 +21,7 @@ async def on_ready():
 """コマンド実行"""
 # メンバー数が均等になるチーム分けその2
 @bot.command()
-async def (ctx, specified_num=2):
+async def kumiwake(ctx, specified_num=2):
     make_team = MakeTeam()
     remainder_flag = 'true'
     msg = make_team.make_party_num(ctx,specified_num,remainder_flag)
