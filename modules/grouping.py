@@ -45,11 +45,11 @@ class MakeTeam:
                 team.extend(remainder)
 
         # チーム分け
-        for i in range(party_num): 
             team.append("=====グリフィンドール=====")
             team.extend(self.channel_mem[1:self.mem_len:party_num])
             team.append("=====スリザリン=====")
             team.extend(self.channel_mem[2:self.mem_len:party_num])
+            
         return ('\n'.join(team))
 
     # チームのメンバー数を指定した場合のチーム分け
