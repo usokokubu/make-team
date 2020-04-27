@@ -77,7 +77,7 @@ class MakeTeam:
             team.append("=====余り=====")
             team.extend(remainder)
 
-        # チーム分け
+        # チーム分け 
         for i in range(party_num): 
             team.append("=====チーム"+str(i+1)+"=====")
             team.extend(self.channel_mem[i:self.mem_len:party_num])
