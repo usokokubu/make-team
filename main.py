@@ -24,7 +24,7 @@ async def on_ready():
 async def kumiwake(ctx, specified_num=2):
     make_team = MakeTeam()
     remainder_flag = 'false'
-    msg = make_team.make_party_num(ctx,specified_num,remainder_flag)
+    msg = make_team.make_party_num(ctx,specified_num)
     await ctx.channel.send(msg)
 
 # メンバー数が均等になるチーム分け
