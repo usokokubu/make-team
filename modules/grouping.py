@@ -44,11 +44,11 @@ class MakeTeam:
                 team.append("=====余り=====")
                 team.extend(remainder)
 
-        # チーム分け
+        # チーム分け 
             team.append("=====グリフィンドール=====")
-            team.extend(self.channel_mem[1:self.mem_len:party_num])
+            team.extend(self.channel_mem[0:self.mem_len:1])
             team.append("=====スリザリン=====")
-            team.extend(self.channel_mem[2:self.mem_len:party_num])
+            team.extend(self.channel_mem[1:self.mem_len:2])
             
         return ('\n'.join(team))
 
