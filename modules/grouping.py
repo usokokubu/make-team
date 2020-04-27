@@ -46,9 +46,9 @@ class MakeTeam:
 
         # チーム分け 
             team.append("=====グリフィンドール=====")
-            team.extend(self.channel_mem[0:self.mem_len:1])
+            team.extend(self.channel_mem[0:self.mem_len:party_num])
             team.append("=====スリザリン=====")
-            team.extend(self.channel_mem[1:self.mem_len:2])
+            team.extend(self.channel_mem[1:self.mem_len:party_num])
             
         return ('\n'.join(team))
 
