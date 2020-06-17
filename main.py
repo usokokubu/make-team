@@ -27,6 +27,11 @@ async def kumiwake(ctx, specified_num=2):
     msg = make_team.make_party_num(ctx,specified_num,remainder_flag)
     await ctx.channel.send(msg)
     
+# マップ決め
+@bot.command()
+async def map(ctx, specified_num=2):
+    make_team = Map
+    
 # メンバー数が均等になるチーム分け
 @bot.command()
 async def team(ctx, specified_num=2):
