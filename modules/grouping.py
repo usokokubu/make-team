@@ -84,11 +84,4 @@ class MakeTeam:
             team.extend(self.channel_mem[i:self.mem_len:party_num])
 
         return ('\n'.join(team))
-
-    class Map:
-
-    def randommap:
-        l = ["バインド", "ヘイブン", "アセント", "スプリット"]
-        print(random.choice(l))
-
-        return ('\n'.join(team))
+    
