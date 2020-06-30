@@ -51,4 +51,3 @@ async def group(ctx, specified_num=1):
 
 """botの接続と起動"""
 bot.run(token)
-
