@@ -9,7 +9,7 @@ from modules.grouping import MakeTeam
 token = os.environ['DISCORD_BOT_TOKEN']
 bot = commands.Bot(command_prefix='/')
 
-"""起動処理"""
+"""起動処理 """
 @bot.event
 async def on_ready():
     print('-----Logged in info-----')
