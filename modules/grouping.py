@@ -30,7 +30,7 @@ class MakeTeam:
 
         # 指定数の確認
         if party_num > self.mem_len or party_num <= 0:
-            return '実行できません。チーム分けできる数を指定してください。(チーム数を指定しない場合は、デフォルトで2が指定されます)'
+            return '実行できません。チーム分けできる数を指定してください。 (チーム数を指定しない場合は、デフォルトで2が指定されます)'
 
         # メンバーリストをシャッフル
         random.shuffle(self.channel_mem)
