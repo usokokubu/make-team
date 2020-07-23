@@ -9,7 +9,7 @@ class MakeTeam:
     def __init__(self):
         self.channel_mem = []
         self.mem_len = 0
-        self.vc_state_err = '実行できません。ボイスチャンネルに入ってコマンドを実行してください。'
+        self.vc_state_err = '実行できません。 ボイスチャンネルに入ってコマンドを実行してください。'
 
     def set_mem(self, ctx):
         state = ctx.author.voice # コマンド実行者のVCステータスを取得
