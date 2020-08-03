@@ -19,7 +19,7 @@ async def on_ready():
     print('------------------------')
 
 """コマンド実行"""
-# メンバー数が均等になるチーム分けその2
+# メンバー数が均等になるチーム分けその2 
 @bot.command()
 async def kumiwake(ctx, specified_num=2):
     make_team = MakeTeam()
